@@ -19,4 +19,4 @@ This is a simple weather application built using Python and Tkinter. It allows y
 
 ### Screenshots
 
-![Weather App Screenshot]()### LicenseThis project is licensed under the [MIT License](LICENSE).### Acknowledgments- [OpenWeatherMap](https://openweathermap.org/) for providing the weather data through their API.- [Tkinter](https://docs.python.org/3/library/tkinter.html) for the GUI framework.- [Requests](https://docs.python-requests.org/en/latest/) for making HTTP requests.Feel free to contribute to this project by creating pull requests or reporting issues.
+![Weather App Screenshot]()### LicenseThis project is licensed under the GNU General Public License v3.0.### Acknowledgments- [OpenWeatherMap](https://openweathermap.org/) for providing the weather data through their API.- [Tkinter](https://docs.python.org/3/library/tkinter.html) for the GUI framework.- [Requests](https://docs.python-requests.org/en/latest/) for making HTTP requests.Feel free to contribute to this project by creating pull requests or reporting issues.
