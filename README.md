@@ -29,5 +29,6 @@ This app was forked off the code base provided by https://github.com/evanemran w
 - Benjamin Varle Semah
 - Sabirah Mensah
 - Stephen Owusu Danso Asare
+- Fianyeku Felix
 
 ### LicenseThis project is licensed under the GNU General Public License v3.0.### Acknowledgments- [OpenWeatherMap](https://openweathermap.org/) for providing the weather data through their API.- [Tkinter](https://docs.python.org/3/library/tkinter.html) for the GUI framework.- [Requests](https://docs.python-requests.org/en/latest/) for making HTTP requests.Feel free to contribute to this project by creating pull requests or reporting issues.
