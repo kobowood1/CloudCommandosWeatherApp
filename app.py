@@ -36,6 +36,7 @@ def getWeather(canvas):
     
         # Display an error message if an exception occurs during weather retrieval
     except Exception as e: 
+        label1.config(text = "OOPS!")
         label2.config(text = "No city found")
 
 # Create the main application window
