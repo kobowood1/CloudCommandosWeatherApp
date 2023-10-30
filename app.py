@@ -15,7 +15,7 @@ def getWeather(canvas):
         
         # Send HTTP GET request to the API and retrieve JSON response
         json_data = requests.get(api).json()
-        # json_data = requests.get(api).json()
+        
         condition = json_data['weather'][0]['main']
         temp = int(json_data['main']['temp'] - 273.15) # change from Kelvin to Celsius
         min_temp = int(json_data['main']['temp_min'] - 273.15)  # change from Kelvin to Celsius
