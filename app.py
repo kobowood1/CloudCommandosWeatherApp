@@ -15,16 +15,16 @@ def getWeather(canvas):
         
         # Send HTTP GET request to the API and retrieve JSON response
         json_data = requests.get(api).json()
-        json_data = requests.get(api).json()
+        # json_data = requests.get(api).json()
         condition = json_data['weather'][0]['main']
-        temp = int(json_data['main']['temp'] - 273.15)
-        min_temp = int(json_data['main']['temp_min'] - 273.15)
-        max_temp = int(json_data['main']['temp_max'] - 273.15)
+        temp = int(json_data['main']['temp'] - 273.15) # change from Kelvin to Celsius
+        min_temp = int(json_data['main']['temp_min'] - 273.15)  # change from Kelvin to Celsius
+        max_temp = int(json_data['main']['temp_max'] - 273.15) # change from Kelvin to Celsius
         pressure = json_data['main']['pressure']
         humidity = json_data['main']['humidity']
         wind = json_data['wind']['speed']
-        sunrise = time.strftime('%I:%M:%S', time.gmtime(json_data['sys']['sunrise'] - 21600))
-        sunset = time.strftime('%I:%M:%S', time.gmtime(json_data['sys']['sunset'] - 21600))
+        sunrise = time.strftime('%I:%M:%S', time.gmtime(json_data['sys']['sunrise']))
+        sunset = time.strftime('%I:%M:%S', time.gmtime(json_data['sys']['sunset']))
 
         # Prepare the weather information to display
         final_info = condition + "\n" + str(temp) + "°C" 
@@ -44,7 +44,7 @@ canvas = tk.Tk()
 canvas.geometry("600x500")
 canvas.title("Cloud Commando Weather App")
 
-# Create the main application window
+# Font styles for the text
 f = ("poppins", 15, "bold")
 t = ("poppins", 35, "bold")
 
